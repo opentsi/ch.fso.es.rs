@@ -8,34 +8,40 @@
 
 # Dataset identity (required)
 # These form the first three segments of every key
-country: ""   # ISO 3166-1 alpha-2 code (e.g., "ch", "de", "us")
-provider: ""  # short identifier (e.g., "adecco", "seco")
-dataset: ""   # short identifier (e.g., "sjmi", "gdp")
+country: "ch"
+provider: "fso"
+dataset: "es_rs"
 
 # Dataset title (required)
 # At minimum, provide English. Add other languages as needed.
 title:
-  en: ""
-  # de: ""
-  # fr: ""
+  en: "Employment statistics by residence status"
+  de: "Erwerbstätigenstatistik nach Aufenthaltsstatus"
+  fr: "Statistique de la population active occupée"
+  it: "Statistica delle persone occupate"
 
 # Data source name (required)
 source_name:
-  en: ""
-  # de: ""
+  en: "Federal Statistical Office FSO"
+  de: "Bundesamt für Statistik BFS"
+  fr: "Office fédéral de la statistique OFS"
+  it: "Ufficio federale di statistica UFS"
 
 # URL to original data source (required)
-source_url: "https://"
+source_url: "https://www.bfs.admin.ch/bfs/de/home/statistiken/arbeit-erwerb/erhebungen/ets.html"
 
 # Data frequency (required)
 # D = daily, W = weekly, M = monthly, Q = quarterly, Y = yearly, I = irregular
-dataset_frequency: "M"
+dataset_frequency: "Q"
 
 # Units of measurement
 # Use "all" if uniform across variables, or specify per variable key
 units:
   all:
-    en: ""
+    en: "Employees"
+    de: "Angestellte"
+    fr: "Emplois"
+    it: "Addetti"
 
 # Aggregation method for temporal aggregation
 # Valid values: mean, sum, last, first
@@ -43,18 +49,105 @@ aggregate:
   all: "mean"
 
 # Dimension order (left to right in the key, after country.provider.dataset)
-dim_order: []
+dim_order:
+  - "residence"
+  - "sex"
 
 # Hierarchical structure of dimensions
 # Nest dimensions according to your key structure
-hierarchy: {}
+hierarchy:
+  residence:
+    tot:
+      ch: ~
+      frgn:
+        sd: ~
+        res: ~
+        sw: ~
+        bc: ~
+        sst: ~
+        oth: ~
+  sex:
+    tot:
+      m: ~
+      f: ~
 
 # Human-readable labels for dimensions and their values
 # dimnames: labels for dimension names
 # <dimension_name>: labels for values within that dimension
 labels:
-  dimnames: {}
-
+  dimnames:
+    residence:
+      en: "Residence status"
+      de: "Aufenthaltsstatus"
+      fr: "Catégorie d'autorisation de résidence"
+      it: "Stato di residenza"
+    sex:
+      en: "Sex"
+      de: "Geschlecht"
+      fr: "Sexe"
+      it: "Sesso"
+  residence:
+    bc:
+      en: "Cross-border commuters"
+      de: "Grenzgänger/innen"
+      fr: "Frontaliers"
+      it: "Frontalieri"
+    ch:
+      en: "Swiss nationals"
+      de: "Schweizer/innen"
+      fr: "Suisses et Suissesses"
+      it: "Svizzeri e svizzere"
+    frgn:
+      en: "Foreign nationals"
+      de: "Ausländer/innen"
+      fr: "Etrangers et étrangères"
+      it: "Stranieri e straniere"
+    oth:
+      en: "Other foreign nationals"
+      de: "Übrige Ausländer/innen"
+      fr: "Autres étrangers"
+      it: "Altri stranieri"
+    res:
+      en: "Residence permit holders"
+      de: "Aufenthalter/innen"
+      fr: "Autorisation de séjour"
+      it: "Titolari di permesso di dimora"
+    sd:
+      en: "Settled (permanent residence)"
+      de: "Niedergelassene"
+      fr: "Autorisation d'établissement"
+      it: "Domiciliati"
+    sst:
+      en: "Short-term permit holders"
+      de: "Kurzaufenthalter/innen"
+      fr: "Autorisation de courte durée"
+      it: "Dimoranti temporanei"
+    sw:
+      en: "Seasonal workers"
+      de: "Saisonniers"
+      fr: "Saisonniers"
+      it: "Stagionali"
+    tot:
+      en: "Total employed"
+      de: "Erwerbstätige, Total"
+      fr: "Personnes actives occupées, total"
+      it: "Occupati, totale"
+  sex:
+    f:
+      en: "Women"
+      de: "Frauen"
+      fr: "Femmes"
+      it: "Donne"
+    m:
+      en: "Men"
+      de: "Männer"
+      fr: "Hommes"
+      it: "Uomini"
+    tot:
+      en: "Total"
+      de: "Total"
+      fr: "Total"
+      it: "Totale"
 
 # update checksum is empty in the beginning
 update_checksum: ""

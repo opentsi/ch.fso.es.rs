@@ -1,0 +1,148 @@
+{
+  "country": "ch",
+  "provider": "fso",
+  "dataset": "es_rs",
+  "title": {
+    "en": "Employment statistics by residence status",
+    "de": "Erwerbstätigenstatistik nach Aufenthaltsstatus",
+    "fr": "Statistique de la population active occupée",
+    "it": "Statistica delle persone occupate"
+  },
+  "source_name": {
+    "en": "Federal Statistical Office FSO",
+    "de": "Bundesamt für Statistik BFS",
+    "fr": "Office fédéral de la statistique OFS",
+    "it": "Ufficio federale di statistica UFS"
+  },
+  "source_url": "https://www.bfs.admin.ch/bfs/de/home/statistiken/arbeit-erwerb/erhebungen/ets.html",
+  "dataset_frequency": "Q",
+  "units": {
+    "all": {
+      "en": "Employees",
+      "de": "Angestellte",
+      "fr": "Emplois",
+      "it": "Addetti"
+    }
+  },
+  "aggregate": {
+    "all": "mean"
+  },
+  "dim_order": [
+    "residence",
+    "sex"
+  ],
+  "hierarchy": {
+    "residence": {
+      "tot": {
+        "ch": {},
+        "frgn": {
+          "sd": {},
+          "res": {},
+          "sw": {},
+          "bc": {},
+          "sst": {},
+          "oth": {}
+        }
+      }
+    },
+    "sex": {
+      "tot": {
+        "m": {},
+        "f": {}
+      }
+    }
+  },
+  "labels": {
+    "dimnames": {
+      "residence": {
+        "en": "Residence status",
+        "de": "Aufenthaltsstatus",
+        "fr": "Catégorie d'autorisation de résidence",
+        "it": "Stato di residenza"
+      },
+      "sex": {
+        "en": "Sex",
+        "de": "Geschlecht",
+        "fr": "Sexe",
+        "it": "Sesso"
+      }
+    },
+    "residence": {
+      "bc": {
+        "en": "Cross-border commuters",
+        "de": "Grenzgänger/innen",
+        "fr": "Frontaliers",
+        "it": "Frontalieri"
+      },
+      "ch": {
+        "en": "Swiss nationals",
+        "de": "Schweizer/innen",
+        "fr": "Suisses et Suissesses",
+        "it": "Svizzeri e svizzere"
+      },
+      "frgn": {
+        "en": "Foreign nationals",
+        "de": "Ausländer/innen",
+        "fr": "Etrangers et étrangères",
+        "it": "Stranieri e straniere"
+      },
+      "oth": {
+        "en": "Other foreign nationals",
+        "de": "Übrige Ausländer/innen",
+        "fr": "Autres étrangers",
+        "it": "Altri stranieri"
+      },
+      "res": {
+        "en": "Residence permit holders",
+        "de": "Aufenthalter/innen",
+        "fr": "Autorisation de séjour",
+        "it": "Titolari di permesso di dimora"
+      },
+      "sd": {
+        "en": "Settled (permanent residence)",
+        "de": "Niedergelassene",
+        "fr": "Autorisation d'établissement",
+        "it": "Domiciliati"
+      },
+      "sst": {
+        "en": "Short-term permit holders",
+        "de": "Kurzaufenthalter/innen",
+        "fr": "Autorisation de courte durée",
+        "it": "Dimoranti temporanei"
+      },
+      "sw": {
+        "en": "Seasonal workers",
+        "de": "Saisonniers",
+        "fr": "Saisonniers",
+        "it": "Stagionali"
+      },
+      "tot": {
+        "en": "Total employed",
+        "de": "Erwerbstätige, Total",
+        "fr": "Personnes actives occupées, total",
+        "it": "Occupati, totale"
+      }
+    },
+    "sex": {
+      "f": {
+        "en": "Women",
+        "de": "Frauen",
+        "fr": "Femmes",
+        "it": "Donne"
+      },
+      "m": {
+        "en": "Men",
+        "de": "Männer",
+        "fr": "Hommes",
+        "it": "Uomini"
+      },
+      "tot": {
+        "en": "Total",
+        "de": "Total",
+        "fr": "Total",
+        "it": "Totale"
+      }
+    }
+  },
+  "update_checksum": "b3b1e12128481d42c12e52d1c0a5b96d9ff69b4d4ba9e5941948fdb3097e07e7"
+}

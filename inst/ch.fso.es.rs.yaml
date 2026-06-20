@@ -1,0 +1,141 @@
+title:
+  en: Employment statistics by residence status
+  de: Erwerbstätigenstatistik nach Aufenthaltsstatus
+  fr: Statistique de la population active occupée ---
+  it: Statistica delle persone occupate ---
+source.name:
+  en: Federal Statistical Office FSO
+  de: Bundesamt für Statistik BFS
+  fr: Office fédéral de la statistique OFS
+  it: Ufficio federale di statistica UFS
+source.url:
+- https://www.bfs.admin.ch/bfs/de/home/statistiken/arbeit-erwerb/erhebungen/ets.html
+units:
+  all:
+    en: Employees
+    de: Angestellte
+    fr: Emplois
+    it: Addetti
+aggregate:
+  all: mean
+dim.order:
+- residence
+- sex
+hierarchy:
+  residence:
+    tot:
+      ch: ~
+      frgn:
+        sd: ~
+        res: ~
+        sw: ~
+        bc: ~
+        sst: ~
+        oth: ~
+  sex:
+    tot:
+      m: ~
+      f: ~
+labels:
+  dimnames:
+    residence:
+      en: ~
+      de: Aufenthaltsstatus
+      fr: Catégorie d'autorisation de résidence
+      it: ~
+    sex:
+      en: ~
+      de: Geschlecht
+      fr: Sexe
+      it: ~
+  residence:
+    bc:
+      en: ~
+      de: Grenzgänger/innen
+      fr: Frontaliers
+      it: ~
+    ch:
+      en: ~
+      de: Schweizer/innen
+      fr: Suisses et Suissesses
+      it: ~
+    frgn:
+      en: ~
+      de: Ausländer/innen
+      fr: Etrangers et étrangères
+      it: ~
+    oth:
+      en: ~
+      de: Übrige Ausländer/innen
+      fr: Autres étrangers
+      it: ~
+    res:
+      en: ~
+      de: Aufenthalter/innen
+      fr: Autorisation de séjour
+      it: ~
+    sd:
+      en: ~
+      de: Niedergelassene
+      fr: Autorisation d'établissement
+      it: ~
+    sst:
+      en: ~
+      de: Kurzaufenthalter/innen
+      fr: Autorisation de courte durée
+      it: ~
+    sw:
+      en: ~
+      de: Saisonniers
+      fr: Saisonniers
+      it: ~
+    tot:
+      en: ~
+      de: Erwerbstätige,Total
+      fr: Personnes actives occupées, total
+      it: ~
+  sex:
+    f:
+      en: ~
+      de: Frauen
+      fr: Hommes
+      it: ~
+    m:
+      en: ~
+      de: Männer
+      fr: Femmes
+      it: ~
+    tot:
+      en: ~
+      de: Total
+      fr: Total
+      it: ~
+details:
+  en: The Employment Statistics provide important structural and economic information
+    that can be used to monitor the labour market. Everyone working in Switzerland
+    is covered by these statistics. Persons in employment are those who carry out
+    an economic activity as defined by the national accounts for at least one hour
+    per week. The ES were created in 1977. General figures go back as far as 1948.
+    Other, more detailed figures as far as 1960.
+  de: Die Erwerbstätigenstatistik (ETS) liefert wichtige strukturorientierte und konjunkturelle
+    Daten zur Arbeitsmarktbeobachtung. Erfasst werden die im schweizerischen Wirtschaftsgebiet
+    erwerbstätigen Personen. Als erwerbstätig gelten alle Personen, die im Sinne der
+    Volkswirtschaftlichen Gesamtrechnung während mindestens einer Stunde pro Woche
+    einer produktiven Arbeit nachgehen. Die ETS wurde 1977 geschaffen. Globaldaten
+    gehen bis 1948 zurück, detailliertere Daten wurden ab 1960 zur Verfügung gestellt.
+  fr: La statistique de la population active occupée (SPAO) livre des données structurelles
+    et conjoncturelles précieuses pour l'observation du marché du travail. L'ensemble
+    des personnes travaillant à l'intérieur du territoire économique suisse sont couvertes.
+    Sont considérées comme actives occupées, les personnes qui accomplissent une activité
+    productive au sens de la comptabilité nationale durant au moins une heure par
+    semaine. La SPAO a été créée en 1977. Des chiffres globaux remontent jusqu'en
+    1948 et d'autres, plus détaillés, jusqu'en 1960.
+  it: La statistica delle persone occupate (SPO) fornisce dati strutturali e congiunturali
+    preziosi per osservare il mercato del lavoro. La statistica copre tutte le persone
+    attive in Svizzera, vale a dire le persone occupate che esercitano un'attività
+    produttiva ai sensi della contabilità nazionale per almeno un'ora alla settimana.
+    La SPO è stata creata nel 1977; alcune cifre globali risalgono al 1948 e altre,
+    più dettagliate, al 1960.
+utc.updated: 2025-11-17 15:41:05
+sha1: KgHQKGqOS7qKdNEvmeC+ptHjVaA=
+
