@@ -1,0 +1,75 @@
+
+# ch.fso.es.rs
+
+The ch.fso.es.rs package provides versioned time series data and their
+meta information for scientific research. In addition, the package
+contains the extract-transform-load (ETL) functionality that sources the
+data from its original provider.
+
+## Browse Time Series Data
+
+You can use GitHub’s ability to render to csv to explore the datasets
+
+## Basic Data Consumption via opentimeseries
+
+``` r
+remotes::install_github("opentsi/opentimeseries")
+library(opentimeseries)
+
+# first param `series` defaults to NULL
+# fetches all series from `remote_archive`
+ts <- read_open_ts(
+  remote_archive = "opentsi/ch.fso.es.rs"
+)
+
+ts
+```
+
+Given a unique time series identifier and a GitHub repo,
+*opentimeseries* will return a time series and long format `data.table`.
+
+## Basic Usage
+
+``` r
+ts <- read_open_ts(
+  remote_archive = "opentsi/ch.fso.es.rs"
+)
+```
+
+By specifying a date in addition, you can able to obtain other versions
+but the most recent one. The *opentimeseries* package will simply select
+the most recent release that was available at the selected date.
+
+``` r
+ts202307 <- read_open_ts(
+  remote_archive = "opentsi/ch.fso.es.rs",
+  date = "2023-07-01"
+)
+```
+
+Because time series data can get revised, storing vintages is important
+to monitor data revisions and benchmark forecasts. Here’s a quick visual
+comparison:
+
+# please insert your main series you want to showcase visually
+
+# to replace this example!
+
+``` r
+library(opentimeseries)
+library(tsbox)
+
+ts <- read_open_ts(series = "tot.tot",
+  remote_archive = "opentsi/ch.fso.es.rs"
+)
+ts202307 <- read_open_ts(series = "tot.tot",
+  remote_archive = "opentsi/ch.fso.es.rs",
+  date = "2023-07-01"
+)
+ts202307$id <- "tot.tot.202307"
+ts$id <- sprintf("tot.tot.202605")
+ts_plot(rbind(ts202307, ts))
+#> [time]: 'date'
+```
+
+![](man/figures/README-unnamed-chunk-4-1.png)<!-- -->
