@@ -52,4 +52,7 @@ library(devtools)
 check()
 document()
 
+## Step 9: build readme
+devtools::build_readme()
+
 
