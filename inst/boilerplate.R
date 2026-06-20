@@ -53,6 +53,9 @@ check()
 document()
 
 ## Step 9: build readme
+# for this, check REAMDE.Rmd and add the main time series to the last code chuck
+# this will then create the plot
+# finally, run
 devtools::build_readme()
 
 

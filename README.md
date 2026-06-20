@@ -40,20 +40,9 @@ By specifying a date in addition, you can able to obtain other versions
 but the most recent one. The *opentimeseries* package will simply select
 the most recent release that was available at the selected date.
 
-``` r
-ts202307 <- read_open_ts(
-  remote_archive = "opentsi/ch.fso.es.rs",
-  date = "2023-07-01"
-)
-```
-
 Because time series data can get revised, storing vintages is important
 to monitor data revisions and benchmark forecasts. Here’s a quick visual
 comparison:
-
-# please insert your main series you want to showcase visually
-
-# to replace this example!
 
 ``` r
 library(opentimeseries)
@@ -72,4 +61,4 @@ ts_plot(rbind(ts202307, ts))
 #> [time]: 'date'
 ```
 
-![](man/figures/README-unnamed-chunk-4-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-3-1.png)<!-- -->
