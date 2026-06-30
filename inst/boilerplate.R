@@ -57,5 +57,3 @@ document()
 # this will then create the plot
 # finally, run
 devtools::build_readme()
-
-

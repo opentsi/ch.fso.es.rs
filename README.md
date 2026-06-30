@@ -1,6 +1,8 @@
 
 # ch.fso.es.rs
 
+[![dataset](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/opentsi/ch.fso.es.rs/master/data-raw/shield.json)](https://github.com/opentsi/ch.fso.es.rs/actions/workflows/update_data.yaml)
+
 The ch.fso.es.rs package provides versioned time series data and their
 meta information for scientific research. In addition, the package
 contains the extract-transform-load (ETL) functionality that sources the
